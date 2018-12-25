@@ -31,8 +31,15 @@ public class CommentListView extends LinearLayout {
     public void setOnItemClickListener(onItemClickListener listener){
         mOnItemClickListener=listener;
     }
-    public void setmOnItemLongClickListener(onItemLongClickListener listener){
+    public void setOnItemLongClickListener(onItemLongClickListener listener){
         mOnItemLongClickListener=listener;
+    }
+    public onItemClickListener getOnItemClickListener() {
+        return mOnItemClickListener;
+    }
+
+    public onItemLongClickListener getOnItemLongClickListener() {
+        return mOnItemLongClickListener;
     }
     public static interface onItemClickListener{
         void onItemClick(int position);
