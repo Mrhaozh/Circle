@@ -66,7 +66,8 @@ public class CommentAdapter {
         }
         builder.append(":");
         builder.append(bean.getContent());
-        commentTv.setMovementMethod(circleMovementMethod);
+        commentTv.setMovementMethod(LinkMovementMethod.getInstance());
+        //commentTv.setMovementMethod(circleMovementMethod);
         commentTv.setText(builder);
         commentTv.setOnClickListener(new View.OnClickListener() {
             @Override
